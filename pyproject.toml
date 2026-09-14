@@ -1,0 +1,24 @@
+[project]
+name = "customer_segmentation"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "oyelabi adeolu",email = "oyelabiadeolu@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pandas (>=2.3.3,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "customer_segmentation", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^7.1.0"
+pytest = "^9.1.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
